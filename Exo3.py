@@ -6,7 +6,7 @@ def VerifEntier (saisieF):
 
 def SaisieIndex(index):
     index=input('Saisir un index : ')
-    VerifEntier(index)
+    index=VerifEntier(index)
     while int(len(Tab)) < int(index) :
         index=input('Saisir un index valide : ')
     return index
