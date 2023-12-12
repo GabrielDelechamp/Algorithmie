@@ -43,12 +43,12 @@ FONCTION SaisieIndex (Entier:index, Tableau:Tab):Entier
 
     Afficher('Saisir un index : ')
     Récupérer(index)
-    VerifEntier(index)
+    index=VerifEntier(index)
 
     Tant que Longueur(Tab) < index :
         Afficher('Saisir un index valide : ')
         Récupérer(index)
-        VerifEntier(index)
+        index=VerifEntier(index)
     Fin Tant que
 
     Retourne (index)
