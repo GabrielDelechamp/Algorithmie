@@ -19,9 +19,9 @@ Début
         i+=1
     Fin Tant que
 
-    index1=SaisieIndex(index1)
+    index1=SaisieIndex(index1,Tab)
 
-    index2=SaisieIndex(index2)
+    index2=SaisieIndex(index2,Tab)
     
     SommeIndex=Tab[index1]+Tab[index2]
 
@@ -39,7 +39,7 @@ FONCTION VerifEntier (saisieF:Entier):Entier
     Retourne(saisieF):Entier
 Fin
 
-FONCTION SaisieIndex (index:Entier):Entier
+FONCTION SaisieIndex (index:Entier, Tab:Tableau):Entier
 
     Afficher('Saisir un index : ')
     Récupérer(index)
