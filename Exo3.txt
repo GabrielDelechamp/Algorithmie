@@ -9,6 +9,7 @@ Début
 
     Afficher('Entrer un nombre : ')
     Récupérer(saisie)
+    saisie=VerifEntier(saisie)
 
     Tant que saisie != 0 ou resultat < 100:
         Afficher('Entrer un nombre : ')
