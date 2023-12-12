@@ -9,12 +9,12 @@ Début
         VerifEntier(saisie)
         resultat+=saisie
     Fin Tant que
-    Afficher('Saisir un nombre : ')
+    Afficher('Saisir un index : ')
     Récupérer(index1)
     VerifEntier(index1)
     Tab[1]=index1
 
-    Afficher('Saisir un nombre : ')
+    Afficher('Saisir un index : ')
     Récupérer(index2)
     VerifEntier(index2)
     Tab[2]=index2
@@ -25,8 +25,8 @@ Début
 Fin
 
 FONCTION VerifEntier (saisieF:Entier):Entier
-    Tant que saisieF !=Entier
-        Afficher('Entrer un nombre : ')
+    Tant que saisieF is not Entier
+        Afficher('Entrer un Entier : ')
         Récupérer(saisieF)
     Fin Tant que
     Retourne(saisieF):Entier

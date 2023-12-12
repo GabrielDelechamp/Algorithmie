@@ -19,5 +19,5 @@ Fin
 FONCTION CompteLettre(Chaine:texte):Entier
     Var nbLettre:Entier
     nbLettre=Longueur(texte)
-    Retourne nbLettre:Entier
+    Retourne nbLettre
 Fin
