@@ -1,0 +1,17 @@
+Var mot: Chaine
+Début
+    Afficher('Entrer un mot : ')
+    Récupérer(mot)
+    mot=ChgmtEtoile(mot)
+    Afficher(mot)
+Fin
+
+FONCTION ChgmtEtoile(chaine:texte)
+    Var Resultat : Chaine
+    Var i : Entier
+    Resultat=''
+    Pour i allant de 1 à Longueur(texte):
+        Resultat+='*'
+    Fin Pour
+    Retourne Resultat
+Fin
