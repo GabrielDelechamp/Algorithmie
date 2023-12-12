@@ -1,34 +1,55 @@
 Var saisie, resultat, index1, index2, SommeIndex : Entier
 Var Tab : Tableau
 Début
-    saisie=''
+    Tab = []
+    resultat=0
+    index1=0
+    index2=0
     i=0
-    Tant que saisie != 0 ou resultat<=100:
+
+    Afficher('Entrer un nombre : ')
+    Récupérer(saisie)
+
+    Tant que saisie != 0 :
         Afficher('Entrer un nombre : ')
         Récupérer(saisie)
         VerifEntier(saisie)
         resultat+=saisie
+        Tab[i]=saisie
+        i+=1
     Fin Tant que
-    Afficher('Saisir un index : ')
-    Récupérer(index1)
-    VerifEntier(index1)
-    Tab[1]=index1
 
-    Afficher('Saisir un index : ')
-    Récupérer(index2)
-    VerifEntier(index2)
-    Tab[2]=index2
+    index1=SaisieIndex(index1)
+
+    index2=SaisieIndex(index2)
     
-    SommeIndex=Tab[1]+Tab[2]
+    SommeIndex=Tab[index1]+Tab[index2]
 
     Afficher(SommeIndex)
+    
 Fin
 
 FONCTION VerifEntier (saisieF:Entier):Entier
+
     Tant que saisieF is not Entier
         Afficher('Entrer un Entier : ')
         Récupérer(saisieF)
     Fin Tant que
+
     Retourne(saisieF):Entier
 Fin
-        
+
+FONCTION SaisieIndex (index:Entier):Entier
+
+    Afficher('Saisir un index : ')
+    Récupérer(index)
+    VerifEntier(index)
+
+    Tant que Longueur(Tab) < index :
+        Afficher('Saisir un index valide : ')
+        Récupérer(index)
+        VerifEntier(index)
+    Fin Tant que
+
+    Retourne index
+Fin
