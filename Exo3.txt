@@ -29,17 +29,17 @@ Début
 
 Fin
 
-FONCTION VerifEntier (saisieF:Entier):Entier
+FONCTION VerifEntier (Entier:saisieF):Entier
 
     Tant que saisieF is not Entier
         Afficher('Entrer un Entier : ')
         Récupérer(saisieF)
     Fin Tant que
 
-    Retourne(saisieF):Entier
+    Retourne(saisieF)
 Fin
 
-FONCTION SaisieIndex (index:Entier, Tab:Tableau):Entier
+FONCTION SaisieIndex (Entier:index, Tableau:Tab):Entier
 
     Afficher('Saisir un index : ')
     Récupérer(index)
@@ -51,5 +51,5 @@ FONCTION SaisieIndex (index:Entier, Tab:Tableau):Entier
         VerifEntier(index)
     Fin Tant que
 
-    Retourne index
+    Retourne (index)
 Fin
