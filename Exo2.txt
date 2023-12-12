@@ -1,5 +1,6 @@
 Var mot: Chaine
 Var i,j : Entiers
+Var Tab : Tableau
 Début
     mot=''
     i=0
@@ -15,8 +16,8 @@ Début
     Fin Pour
 Fin
 
-FONCTION CompteLettre(Chaine:texte)
+FONCTION CompteLettre(Chaine:texte):Entier
     Var nbLettre:Entier
     nbLettre=Longueur(texte)
-    Retourne nbLettre
+    Retourne nbLettre:Entier
 Fin
