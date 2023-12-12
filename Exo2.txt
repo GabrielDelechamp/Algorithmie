@@ -1,0 +1,21 @@
+Var
+Début
+    mot=''
+    i=0
+    Tant que mot != 'STOP':
+        Afficher('Entrer un mot : ')
+        Récupérer(mot)
+        nb=CompteLettre(mot)
+        Tab[i]=nb
+        i+=1
+    Fin Tant que
+    Pour j allant de 0 à i:
+        Afficher(Tab[j])
+    Fin Pour
+Fin
+
+FONCTION CompteLettre(Chaine:texte)
+    Var nbLettre:Entier
+    nbLettre=Longueur(texte)
+    Retourne nbLettre
+Fin
