@@ -10,7 +10,7 @@ Début
     Afficher('Entrer un nombre : ')
     Récupérer(saisie)
 
-    Tant que saisie != 0 :
+    Tant que saisie != 0 ou resultat >=100:
         Afficher('Entrer un nombre : ')
         Récupérer(saisie)
         VerifEntier(saisie)
@@ -18,9 +18,6 @@ Début
         Tab[i]=saisie
         i+=1
     Fin Tant que
-
-    Si resultat >=100:
-        Sortir de la boucle
 
     index1=SaisieIndex(index1)
 
