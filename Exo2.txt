@@ -1,4 +1,5 @@
-Var
+Var mot: Chaine
+Var i,j : Entiers
 Début
     mot=''
     i=0
