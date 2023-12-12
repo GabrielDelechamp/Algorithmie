@@ -19,6 +19,9 @@ Début
         i+=1
     Fin Tant que
 
+    Si resultat >=100:
+        Sortir de la boucle
+
     index1=SaisieIndex(index1)
 
     index2=SaisieIndex(index2)
@@ -26,7 +29,7 @@ Début
     SommeIndex=Tab[index1]+Tab[index2]
 
     Afficher(SommeIndex)
-    
+
 Fin
 
 FONCTION VerifEntier (saisieF:Entier):Entier
